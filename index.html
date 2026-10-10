@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inner Clarity 無料セッション｜Clarity Shift Lab</title>
+<meta name="description" content="頑張っているのに、なんかしんどい。その感覚の正体を一緒に見ていく、Inner Clarity Coach たかの無料セッションです。オンライン（Zoom）で行います。">
+<meta property="og:title" content="Inner Clarity 無料セッション｜Clarity Shift Lab">
+<meta property="og:description" content="頑張っているのに、なんかしんどい。その感覚の正体、一緒に見てみませんか。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1501597301489-8b75b675ba0a?w=1200&h=630&fit=crop&q=80&fm=jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Shippori+Mincho:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f5f2;--white:#fff;--ink:#454545;--text:#5c5c5c;--mute:#9a9a9a;--line:#e3e0da;
+  --blue:#6f8ea8;--blue-deep:#4f6d86;--navy:#33495c;--sky:#dde6ed;--sky-pale:#eef3f6;--sand:#ece7df;--sand-deep:#a99f90;
+  --line-green:#06c755;
+  --mincho:"Shippori Mincho","Yu Mincho","Hiragino Mincho ProN",serif;
+  --en:"Cormorant Garamond",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--paper);color:var(--text);font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;font-size:14.5px;line-height:2.05;letter-spacing:.03em;overflow-x:hidden}
+a{color:inherit}
+img{display:block;max-width:100%}
+p,li,dd{text-wrap:pretty;word-break:auto-phrase}
+.ck{display:inline-block;white-space:nowrap}
+.ct{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* ---------- header ---------- */
+.hd{position:fixed;top:0;left:0;right:0;z-index:50;color:#fff;transition:background .4s,box-shadow .4s,color .4s}
+.hd-in{max-width:1180px;margin:0 auto;height:60px;padding:0 16px 0 22px;display:flex;align-items:center;gap:20px}
+.logo{text-decoration:none;line-height:1.1;margin-right:auto}
+.logo b{display:block;font-family:var(--en);font-weight:500;font-size:19px;letter-spacing:.06em}
+.logo span{display:block;font-size:9px;letter-spacing:.22em;opacity:.85;margin-top:3px}
+.gnav{display:none}
+.hd-cta{display:none}
+.menu-btn{display:flex;align-items:center;gap:10px;background:none;border:0;color:inherit;cursor:pointer;font-family:var(--en);font-size:15px;letter-spacing:.18em;padding:8px 4px}
+.menu-btn i{display:block;width:22px;height:7px;border-top:1px solid currentColor;border-bottom:1px solid currentColor}
+.hd.solid{background:rgba(255,255,255,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+
+.nav{position:fixed;inset:0;z-index:60;background:var(--paper);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;overflow:auto}
+.nav.open{opacity:1;visibility:visible}
+.nav-in{max-width:520px;margin:0 auto;padding:22px 28px 40px}
+.nav-top{display:flex;justify-content:space-between;align-items:center;height:36px;color:var(--ink)}
+.close-btn{background:none;border:0;color:inherit;cursor:pointer;font-family:var(--en);font-size:15px;letter-spacing:.18em;display:flex;align-items:center;gap:10px;padding:8px 0}
+.close-btn i{position:relative;width:18px;height:18px;display:block}
+.close-btn i::before,.close-btn i::after{content:"";position:absolute;left:0;top:50%;width:18px;height:1px;background:currentColor;transform:rotate(45deg)}
+.close-btn i::after{transform:rotate(-45deg)}
+.nav ol{list-style:none;margin-top:30px;border-top:1px solid var(--line)}
+.nav li a{display:flex;align-items:baseline;gap:16px;padding:15px 4px;border-bottom:1px solid var(--line);text-decoration:none}
+.nav li .j{font-family:var(--mincho);font-size:16px;color:var(--ink);letter-spacing:.08em}
+.nav li .e{margin-left:auto;font-family:var(--en);font-style:italic;font-size:14px;color:var(--mute)}
+.nav .btn-line{margin-top:30px}
+
+/* ---------- buttons ---------- */
+.btn-line{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:400px;margin:0 auto;text-decoration:none;background:var(--navy);color:#fff;border-radius:999px;padding:17px 22px;font-size:15px;font-weight:500;letter-spacing:.1em;line-height:1.5;box-shadow:0 8px 22px rgba(51,73,92,.22);transition:transform .25s,box-shadow .25s,background .25s}
+.btn-line:hover{background:#283b4b;transform:translateY(-2px);box-shadow:0 12px 26px rgba(51,73,92,.26)}
+.btn-line svg{width:22px;height:22px;flex:none}
+.btn-line .arw{width:14px;height:14px;margin-left:2px}
+.btn-sub{display:block;text-align:center;font-size:11.5px;color:var(--mute);margin-top:10px;letter-spacing:.06em;line-height:1.7}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;color:#fff;overflow:hidden;display:flex;align-items:flex-end;
+  background:#8ea3b4 url("https://images.unsplash.com/photo-1501597301489-8b75b675ba0a?w=1800&q=80&fm=jpg") center 42%/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(51,73,92,.34) 0%,rgba(51,73,92,.06) 36%,rgba(51,73,92,.12) 58%,rgba(36,52,66,.62) 100%)}
+.hero-in{position:relative;z-index:1;width:100%;max-width:1080px;margin:0 auto;padding:120px 26px 92px}
+.hero .sub{font-family:var(--mincho);font-size:13px;letter-spacing:.2em;opacity:.95}
+.hero h1{margin-top:14px;font-weight:400;line-height:1.25;text-shadow:0 2px 16px rgba(30,45,60,.3)}
+.hero h1 .en{display:block;font-family:var(--en);font-size:44px;letter-spacing:.03em}
+.hero h1 .ja{display:block;font-family:var(--mincho);font-weight:500;font-size:28px;letter-spacing:.2em;margin-top:6px}
+.hero .lead{margin-top:22px;font-family:var(--mincho);font-size:16px;line-height:2.05;letter-spacing:.1em;text-shadow:0 1px 12px rgba(30,45,60,.35)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chips span{font-size:12px;letter-spacing:.12em;border:1px solid rgba(255,255,255,.8);background:rgba(255,255,255,.12);border-radius:999px;padding:3px 14px;line-height:1.8}
+.hero .btn-line{margin:28px 0 0;background:#fff;color:var(--navy);box-shadow:0 10px 26px rgba(20,30,40,.25)}
+.hero .btn-line:hover{background:var(--sky-pale)}
+.hero .btn-sub{color:rgba(255,255,255,.85);text-align:left;max-width:400px}
+.scroll{position:absolute;z-index:1;right:22px;bottom:26px;font-family:var(--en);font-size:12px;letter-spacing:.24em;writing-mode:vertical-rl;line-height:1}
+.scroll::after{content:"";display:block;width:1px;height:40px;margin:10px auto 0;background:linear-gradient(#fff,rgba(255,255,255,0));animation:drip 2.2s ease-in-out infinite}
+@keyframes drip{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- section common ---------- */
+.sec{padding:96px 0}
+.sec.white{background:var(--white)}
+.sh{margin-bottom:40px}
+.sh .en{display:flex;align-items:center;gap:12px;font-family:var(--en);font-size:15px;letter-spacing:.2em;color:var(--blue);text-transform:uppercase}
+.sh .en::before{content:"";width:28px;height:1px;background:var(--blue)}
+.sh h2{font-family:var(--mincho);font-weight:500;font-size:24px;color:var(--ink);letter-spacing:.12em;line-height:1.65;margin-top:12px}
+.sh.center{text-align:center}
+.sh.center .en{justify-content:center}
+.sh.center .en::after{content:"";width:28px;height:1px;background:var(--blue)}
+.fade{opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform .9s ease}
+.fade.in{opacity:1;transform:none}
+
+/* intro */
+.intro{padding:96px 0 90px;text-align:center}
+.intro .q{font-family:var(--mincho);font-size:20px;color:var(--ink);letter-spacing:.16em;line-height:2.1}
+.intro p{margin-top:26px;font-size:15px;line-height:2.25}
+.intro .em{display:inline-block;font-family:var(--mincho);font-size:19px;color:var(--navy);letter-spacing:.1em;margin:6px 0;background:linear-gradient(transparent 62%,var(--sky) 62%)}
+
+/* concern */
+.checks{list-style:none;display:grid;gap:10px;max-width:760px;margin:0 auto}
+.checks li{background:var(--white);border-radius:12px;padding:16px 18px 16px 52px;position:relative;font-size:14.5px;color:var(--ink);line-height:1.8;box-shadow:0 2px 10px rgba(70,90,110,.04)}
+.checks li::before{content:"";position:absolute;left:18px;top:50%;width:20px;height:20px;margin-top:-10px;border-radius:50%;background:var(--sky)}
+.checks li::after{content:"";position:absolute;left:25px;top:50%;width:5px;height:10px;margin-top:-7px;border:solid var(--blue-deep);border-width:0 1.5px 1.5px 0;transform:rotate(45deg)}
+.after-check{text-align:center;margin-top:40px;font-family:var(--mincho);font-size:17px;color:var(--ink);letter-spacing:.1em;line-height:2.1}
+
+/* message */
+.msg{display:grid;gap:34px}
+.msg-ph{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5;background:var(--sky)}
+.msg-ph img{width:100%;height:100%;object-fit:cover;transform:scale(1.85);transform-origin:36% 100%}
+.msg-ph figcaption{position:absolute;left:16px;bottom:12px;font-family:var(--en);font-style:italic;font-size:15px;color:#fff;letter-spacing:.08em;text-shadow:0 1px 8px rgba(30,45,60,.45)}
+.msg-tx h3{font-family:var(--mincho);font-weight:500;font-size:20px;color:var(--ink);letter-spacing:.14em;line-height:1.7;margin-bottom:18px}
+.msg-tx p+p{margin-top:1.25em}
+.story{margin-top:64px;display:grid;gap:34px}
+.story-ph{border-radius:16px;overflow:hidden;aspect-ratio:3/2;background:var(--sky)}
+.story-ph img{width:100%;height:100%;object-fit:cover}
+.story h3{font-family:var(--mincho);font-weight:500;font-size:20px;color:var(--ink);letter-spacing:.14em;line-height:1.7;margin-bottom:18px}
+.story h3 small{display:block;font-family:var(--en);font-style:italic;font-weight:400;font-size:15px;color:var(--blue);letter-spacing:.08em;margin-bottom:2px}
+.story p+p{margin-top:1.25em}
+.first{margin-top:64px;background:var(--sky-pale);border-radius:18px;padding:40px 24px 36px}
+.first h3{font-family:var(--mincho);font-weight:500;font-size:20px;color:var(--ink);letter-spacing:.14em;line-height:1.7;margin-bottom:18px;text-align:center}
+.first p+p{margin-top:1.25em}
+.sign{margin-top:26px;text-align:right;font-family:var(--mincho);font-size:14px;color:var(--ink);letter-spacing:.12em}
+.sign b{font-weight:500;font-size:18px;margin-left:8px}
+
+/* band */
+.band{height:280px;background:center/cover no-repeat;position:relative}
+.band span{position:absolute;right:22px;bottom:16px;font-family:var(--en);font-style:italic;font-size:16px;color:#fff;letter-spacing:.1em;text-shadow:0 1px 8px rgba(30,45,60,.4)}
+
+/* benefit */
+.bens{display:grid;gap:14px}
+.ben{background:var(--paper);border-radius:16px;padding:28px 24px 26px;position:relative}
+.ben .no{font-family:var(--en);font-size:40px;line-height:1;color:#c3cfd9;font-variant-numeric:lining-nums}
+.ben h3{font-family:var(--mincho);font-weight:600;font-size:18px;color:var(--ink);letter-spacing:.08em;line-height:1.6;margin-top:12px}
+.ben p{font-size:14px;line-height:2;margin-top:10px}
+
+/* voice */
+.voices{display:grid;gap:16px}
+.voice{background:var(--white);border-radius:16px;padding:28px 24px 24px;display:flex;flex-direction:column;box-shadow:0 4px 18px rgba(70,90,110,.05)}
+.voice .q{font-family:var(--en);font-size:56px;line-height:.6;color:var(--sky);height:22px}
+.voice h3{font-family:var(--mincho);font-weight:600;font-size:17.5px;color:var(--ink);letter-spacing:.06em;line-height:1.7;margin-top:6px}
+.voice p{font-size:13.8px;line-height:2;margin-top:12px}
+.voice .who{display:flex;align-items:center;gap:12px;margin-top:auto;padding-top:20px}
+.voice .av{width:42px;height:42px;border-radius:50%;background:var(--sky-pale);color:var(--blue-deep);display:grid;place-items:center;font-family:var(--mincho);font-size:16px;flex:none}
+.voice .nm{font-size:13.5px;color:var(--ink);line-height:1.5}
+.voice .nm small{display:block;font-size:11px;color:var(--mute)}
+.voice-note{margin-top:18px;font-size:11.5px;color:var(--mute);text-align:right}
+
+/* flow */
+.flow{list-style:none;display:grid;gap:12px;counter-reset:f}
+.flow li{background:var(--paper);border-radius:14px;padding:22px 22px 20px 74px;position:relative;counter-increment:f}
+.flow li::before{content:"0" counter(f);position:absolute;left:22px;top:20px;font-family:var(--en);font-size:30px;line-height:1;color:var(--blue);font-variant-numeric:lining-nums}
+.flow h3{font-family:var(--mincho);font-weight:600;font-size:16.5px;color:var(--ink);letter-spacing:.08em;line-height:1.6}
+.flow p{font-size:13.5px;line-height:1.95;margin-top:6px}
+.flow li.opt{background:transparent;border:1px dashed #cbd5dd}
+.flow li.opt::before{color:#aebdca}
+
+/* profile */
+.prof{display:grid;gap:34px;align-items:start}
+.prof-ph{border-radius:16px;overflow:hidden;aspect-ratio:3/4;background:var(--sky);max-width:420px}
+.prof-ph img{width:100%;height:100%;object-fit:cover}
+.prof .role{font-family:var(--en);font-style:italic;font-size:16px;color:var(--blue);letter-spacing:.08em}
+.prof .name{font-family:var(--mincho);font-weight:500;font-size:28px;color:var(--ink);letter-spacing:.2em;line-height:1.4;margin-top:2px}
+.prof dl{margin-top:20px;border-top:1px solid var(--line)}
+.prof dl div{display:grid;grid-template-columns:76px 1fr;gap:10px;padding:12px 2px;border-bottom:1px solid var(--line);font-size:13.5px;line-height:1.8}
+.prof dt{color:var(--mute)}
+.prof dd{color:var(--ink)}
+.prof .bio{margin-top:22px}
+.prof .bio p+p{margin-top:1.2em}
+
+/* entry */
+.entry{position:relative;padding:100px 0;background:#9fb3c2 url("https://images.unsplash.com/photo-1769638551746-1eafdf3eeffc?w=1600&q=80&fm=jpg") center 60%/cover no-repeat}
+.entry::before{content:"";position:absolute;inset:0;background:rgba(238,243,246,.55)}
+.entry .ct{position:relative}
+.entry-box{max-width:720px;margin:0 auto;background:rgba(255,255,255,.96);border-radius:20px;padding:44px 24px 36px;box-shadow:0 16px 40px rgba(51,73,92,.12)}
+.entry-box .sh{margin-bottom:26px}
+.entry-box .body{text-align:center;font-size:14.5px;line-height:2.1}
+.entry-box .body p+p{margin-top:1.1em}
+.entry-box .ttl{margin:32px 0 22px;text-align:center}
+.entry-box .ttl b{display:block;font-family:var(--en);font-weight:400;font-size:28px;color:var(--ink);letter-spacing:.04em;line-height:1.2}
+.entry-box .ttl span{display:block;font-family:var(--mincho);font-size:13px;letter-spacing:.18em;color:var(--blue);margin-top:6px}
+.notes{margin-top:30px;border-top:1px solid var(--line);padding-top:20px;display:grid;gap:12px}
+.notes p{font-size:12.5px;line-height:1.95;color:var(--text)}
+.notes p.small{font-size:11.5px;color:var(--mute)}
+.notes a{color:var(--blue-deep)}
+
+/* closing */
+.close{position:relative;color:#fff;padding:110px 0 120px;background:#7f97aa url("https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?w=1800&q=80&fm=jpg") center/cover no-repeat}
+.close::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(51,73,92,.5),rgba(51,73,92,.62))}
+.close .ct{position:relative;max-width:760px;text-align:center}
+.close .en{font-family:var(--en);font-style:italic;font-size:17px;letter-spacing:.12em;opacity:.9}
+.close h2{font-family:var(--mincho);font-weight:500;font-size:26px;letter-spacing:.2em;margin-top:6px}
+.close .body{margin-top:30px;font-family:var(--mincho);font-size:15px;line-height:2.3;letter-spacing:.08em}
+.close .body p+p{margin-top:1.3em}
+.close .sign{text-align:center;color:#fff;margin-top:30px}
+.close .btn-line{margin-top:40px;background:#fff;color:var(--navy)}
+
+/* footer */
+.ft{background:#2f3a44;color:#c9d0d6;padding:56px 0 calc(40px + env(safe-area-inset-bottom))}
+.ft .logo b{color:#fff}
+.ft .logo span{color:#aab4bc}
+.ft nav{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:24px;font-size:12.5px}
+.ft nav a{text-decoration:none;opacity:.85}
+.ft nav a:hover{opacity:1;text-decoration:underline}
+.ft .cp{margin-top:28px;font-family:var(--en);font-size:12.5px;letter-spacing:.1em;color:#8f9aa3}
+
+/* floating cta (mobile) */
+.float{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:40;transform:translateY(140%);transition:transform .4s}
+.float.show{transform:none}
+.float .btn-line{max-width:none;padding:14px 18px;font-size:14.5px}
+
+@media (max-width:359px){
+  .hero h1 .en{font-size:38px}.hero h1 .ja{font-size:24px;letter-spacing:.14em}
+  .sh h2{font-size:21px}.intro .q{font-size:18px}
+}
+@media (min-width:720px){
+  .checks{grid-template-columns:1fr 1fr}
+  .checks li:last-child{grid-column:1/-1;max-width:calc(50% - 5px);justify-self:center;width:100%}
+  .bens{grid-template-columns:1fr 1fr}
+  .voices{grid-template-columns:1fr 1fr}
+  .flow{grid-template-columns:1fr 1fr}
+  .entry-box{padding:56px 56px 44px}
+  .first{padding:52px 56px 44px}
+}
+@media (min-width:960px){
+  body{font-size:15px}
+  .ct{padding:0 48px}
+  .sec{padding:120px 0}
+  .sh h2{font-size:28px}
+  .hd-in{height:72px;padding:0 32px}
+  .menu-btn{display:none}
+  .gnav{display:flex;gap:26px}
+  .gnav a{text-decoration:none;font-family:var(--mincho);font-size:13.5px;letter-spacing:.1em;opacity:.92}
+  .gnav a:hover{opacity:.6}
+  .hd-cta{display:inline-flex;align-items:center;text-decoration:none;font-size:13px;letter-spacing:.1em;border-radius:999px;padding:8px 20px;border:1px solid currentColor;transition:background .25s,color .25s}
+  .hd.solid .hd-cta{background:var(--navy);border-color:var(--navy);color:#fff}
+  .hero{align-items:center}
+  .hero-in{padding:140px 48px 110px}
+  .hero h1 .en{font-size:64px}
+  .hero h1 .ja{font-size:36px}
+  .hero .lead{font-size:18px}
+  .intro .q{font-size:24px}
+  .intro p{font-size:16px}
+  .msg{grid-template-columns:400px 1fr;gap:64px;align-items:center}
+  .story{grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .story-ph{order:2}
+  .ben{padding:36px 36px 32px}
+  .flow{grid-template-columns:repeat(4,1fr)}
+  .flow li{padding:64px 20px 22px}
+  .flow li::before{top:22px}
+  .flow li.opt{grid-column:1/-1;padding:22px 22px 20px 74px}
+  .flow li.opt::before{top:20px}
+  .prof{grid-template-columns:400px 1fr;gap:64px}
+  .band{height:380px}
+  .close{padding:140px 0 150px}
+  .close h2{font-size:30px}
+  .float{display:none}
+}
+@media (prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.scroll::after{animation:none}}
+</style>
+<style id="b">
+/* ===== B案：くすんだ青・縦書き・余白（Pinterestの保存デザインを参考に） ===== */
+:root{--slate:#71899a;--slate-deep:#4e6676;--navy:#4e6676}
+body{background:#f5f5f2}
+.hero{align-items:center;text-align:center;background-image:url("https://images.unsplash.com/photo-1787073555774-fff4c05b1c0a?w=1800&q=80&fm=jpg");background-position:center 55%}
+.hero::before{background:linear-gradient(180deg,rgba(40,58,70,.2) 0%,rgba(40,58,70,.04) 45%,rgba(40,58,70,.36) 100%)}
+.hero-in{display:flex;flex-direction:column;align-items:center;padding:110px 26px 100px}
+.hero h1 .en{font-size:46px;letter-spacing:.08em}
+.hero h1 .ja{font-size:19px;letter-spacing:.5em;margin-top:12px;padding-left:.5em}
+.hero h1::after{content:"";display:block;width:150px;height:14px;margin:18px auto 0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 14'%3E%3Cpath d='M2 8 C 20 2, 34 2, 50 8 S 80 14, 100 7 S 132 2, 148 7' fill='none' stroke='%23fff' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E") center/contain no-repeat}
+.hero .lead{font-size:15px}
+.chips{justify-content:center}
+.hero .btn-line{margin:30px auto 0}
+.hero .btn-sub{text-align:center}
+.sh .en{color:var(--slate)}
+.sh .en::before,.sh.center .en::after{background:var(--slate)}
+.btn-line:hover{background:#3f5462}
+.hd.solid .hd-cta{background:var(--slate-deep);border-color:var(--slate-deep)}
+.intro .em{color:var(--slate-deep);background:linear-gradient(transparent 62%,#dfe7ec 62%)}
+.checks li,.ben,.voice,.flow li,.entry-box,.first{border-radius:4px}
+.checks li{box-shadow:none;border:1px solid #e1e5e6}
+.checks li::before{background:#e3eaee}
+.msg-ph,.story-ph,.prof-ph{border-radius:2px;box-shadow:16px 16px 0 #e3eaee}
+.first{background:#fff;border:1px solid #e3e7e8}
+.band{height:320px;background-image:url("https://images.unsplash.com/photo-1696279976107-4d80eb0a7d82?w=1800&q=80&fm=jpg")!important;background-position:center 60%!important}
+#benefit{background:var(--slate);color:#eef3f5}
+#benefit .sh .en{color:#e3ebef}
+#benefit .sh .en::before,#benefit .sh.center .en::after{background:#e3ebef}
+#benefit .sh h2{color:#fff}
+#benefit .ben{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.3)}
+#benefit .ben .no{color:rgba(255,255,255,.55)}
+#benefit .ben h3{color:#fff}
+#benefit .ben p{color:#e8eff2}
+.voice{box-shadow:none;border:1px solid #e3e7e8}
+.voice .q{color:#c9d6de}
+.voices{counter-reset:v}
+.voice{counter-increment:v}
+.voice .av{display:none}
+.voice h3+p{padding-bottom:22px}
+.voice .who{justify-content:space-between;align-items:baseline;gap:12px;border-top:1px solid #e3e7e8;padding-top:14px}
+.voice .who::before{content:"Voice 0" counter(v);font-family:var(--en);font-style:italic;font-size:15px;color:var(--slate);letter-spacing:.06em;white-space:nowrap}
+.voice .nm{font-family:var(--mincho);font-size:14px;letter-spacing:.08em;text-align:right}
+.voice .nm small{display:inline-block;white-space:nowrap;margin-left:4px;font-family:"Noto Sans JP",sans-serif;letter-spacing:.02em}
+.flow li{background:#f3f5f5}
+.flow li::before{color:var(--slate)}
+.entry{background-image:url("https://images.unsplash.com/photo-1775238526717-3ce6d6765ac9?w=1600&q=80&fm=jpg")}
+.entry::before{background:rgba(232,237,240,.45)}
+.close{background-image:url("https://images.unsplash.com/photo-1778838388555-5663f1dd072e?w=1800&q=80&fm=jpg")}
+.close::before{background:linear-gradient(180deg,rgba(60,80,94,.48),rgba(60,80,94,.62))}
+.ft{background:#3c4d58}
+@media (min-width:960px){
+  .hero h1 .en{font-size:76px}
+  .hero h1 .ja{font-size:24px}
+  .intro .ct{display:grid;grid-template-columns:auto auto;justify-content:center;gap:24px 150px;align-items:center;text-align:left;grid-template-rows:1fr 1fr}
+  .intro .q{writing-mode:vertical-rl;grid-row:1/span 2;font-size:20px;line-height:2.2;letter-spacing:.2em}
+  .intro .q .ck,.sec .sh h2 .ck{display:block}
+  .sec .sh h2 wbr{display:none}
+  .intro .q+p{align-self:end}
+  .intro p:last-child{align-self:start}
+  .intro p{margin-top:0}
+  .intro p+p{margin-top:28px}
+  .sec>.ct{max-width:none;padding:0;display:grid;grid-template-columns:minmax(190px,1fr) minmax(0,860px) minmax(48px,.6fr);column-gap:0}
+  .sec>.ct>*{grid-column:2}
+  .sec>.ct>.sh{grid-column:1;grid-row:1/span 9;justify-self:center;margin:0;display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:12px;align-self:start;position:sticky;top:120px;text-align:left}
+  .sec .sh h2{writing-mode:vertical-rl;margin:0;font-size:24px;line-height:1.6;letter-spacing:.18em}
+  .sec .sh .en{writing-mode:vertical-rl;font-size:12px;justify-content:flex-start}
+  .sec .sh .en::before{width:1px;height:28px}
+  .sec .sh.center .en::after{display:none}
+  #concern .ct>.checks{grid-column:1/-1;grid-row:1}
+  #concern .ct>.after-check{grid-column:1/-1;grid-row:2}
+  .checks{margin:0 auto;width:100%;max-width:min(760px,calc(100vw - 400px))}
+  .after-check{text-align:center}
+  .msg{grid-template-columns:340px 1fr;gap:56px}
+  .prof{grid-template-columns:320px 1fr;gap:56px}
+  .flow{grid-template-columns:1fr 1fr}
+  .flow li{padding:22px 22px 20px 74px}
+  .flow li::before{top:20px}
+}
+</style>
+</head>
+<body>
+
+<header class="hd" id="hd">
+  <div class="hd-in">
+    <a class="logo" href="#top"><b>Clarity Shift Lab</b><span>INNER CLARITY COACHING</span></a>
+    <nav class="gnav" aria-label="ページ内メニュー">
+      <a href="#concern">お悩み</a>
+      <a href="#message">はじめに</a>
+      <a href="#benefit">得られること</a>
+      <a href="#voice">お客さまの声</a>
+      <a href="#flow">流れ</a>
+      <a href="#profile">プロフィール</a>
+    </nav>
+    <a class="hd-cta" href="#entry">無料セッション</a>
+    <button class="menu-btn" id="menuOpen" aria-label="メニューを開く" aria-controls="nav" aria-expanded="false">MENU<i></i></button>
+  </div>
+</header>
+
+<div class="nav" id="nav" aria-hidden="true">
+  <div class="nav-in">
+    <div class="nav-top">
+      <a class="logo" href="#top" data-close><b>Clarity Shift Lab</b><span>INNER CLARITY COACHING</span></a>
+      <button class="close-btn" id="menuClose" aria-label="メニューを閉じる">CLOSE<i></i></button>
+    </div>
+    <ol>
+      <li><a href="#concern" data-close><span class="j">こんな感覚、ありませんか？</span><span class="e">Concern</span></a></li>
+      <li><a href="#message" data-close><span class="j">はじめまして</span><span class="e">Message</span></a></li>
+      <li><a href="#benefit" data-close><span class="j">得られること</span><span class="e">Benefit</span></a></li>
+      <li><a href="#voice" data-close><span class="j">お客さまの声</span><span class="e">Voice</span></a></li>
+      <li><a href="#flow" data-close><span class="j">お申し込みの流れ</span><span class="e">Flow</span></a></li>
+      <li><a href="#profile" data-close><span class="j">プロフィール</span><span class="e">Profile</span></a></li>
+      <li><a href="#entry" data-close><span class="j">募集について</span><span class="e">Entry</span></a></li>
+    </ol>
+    <a class="btn-line to-line" href="#entry" data-close><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3C6.48 3 2 6.63 2 11.1c0 4 3.55 7.36 8.35 8 .33.07.77.22.88.5.1.25.07.65.03.9l-.14.86c-.04.25-.2 1 .88.54 1.07-.45 5.78-3.4 7.88-5.83C21.33 14.5 22 12.88 22 11.1 22 6.63 17.52 3 12 3Zm-3.7 10.6H6.33a.53.53 0 0 1-.53-.53V9.13a.53.53 0 1 1 1.06 0v3.4H8.3a.53.53 0 1 1 0 1.07Zm2.03-.53a.53.53 0 1 1-1.06 0V9.13a.53.53 0 1 1 1.06 0v3.94Zm4.75 0a.53.53 0 0 1-.96.31l-2-2.73v2.42a.53.53 0 1 1-1.06 0V9.13a.53.53 0 0 1 .96-.31l2 2.73V9.13a.53.53 0 1 1 1.06 0v3.94Zm3.2-2.5a.53.53 0 1 1 0 1.07h-1.44v.9h1.44a.53.53 0 1 1 0 1.06h-1.97a.53.53 0 0 1-.53-.53V9.13c0-.29.24-.53.53-.53h1.97a.53.53 0 1 1 0 1.06h-1.44v.91h1.44Z"/></svg><span>無料セッションに申し込む</span><svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- hero -->
+<section class="hero">
+  <div class="hero-in">
+    <p class="sub jw">〜 モヤモヤをほどく、|やさしい時間 〜</p>
+    <h1><span class="en">Inner Clarity</span><span class="ja">無料セッション</span></h1>
+    <p class="lead"><span class="jw">頑張っているのに、|なんかしんどい。</span><br><span class="jw">その感覚の正体、|一緒に見てみませんか。</span></p>
+    <div class="chips"><span>参加費 無料</span><span>オンライン（Zoom）</span><span>1対1</span></div>
+    <a class="btn-line to-line" href="#entry"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3C6.48 3 2 6.63 2 11.1c0 4 3.55 7.36 8.35 8 .33.07.77.22.88.5.1.25.07.65.03.9l-.14.86c-.04.25-.2 1 .88.54 1.07-.45 5.78-3.4 7.88-5.83C21.33 14.5 22 12.88 22 11.1 22 6.63 17.52 3 12 3Zm-3.7 10.6H6.33a.53.53 0 0 1-.53-.53V9.13a.53.53 0 1 1 1.06 0v3.4H8.3a.53.53 0 1 1 0 1.07Zm2.03-.53a.53.53 0 1 1-1.06 0V9.13a.53.53 0 1 1 1.06 0v3.94Zm4.75 0a.53.53 0 0 1-.96.31l-2-2.73v2.42a.53.53 0 1 1-1.06 0V9.13a.53.53 0 0 1 .96-.31l2 2.73V9.13a.53.53 0 1 1 1.06 0v3.94Zm3.2-2.5a.53.53 0 1 1 0 1.07h-1.44v.9h1.44a.53.53 0 1 1 0 1.06h-1.97a.53.53 0 0 1-.53-.53V9.13c0-.29.24-.53.53-.53h1.97a.53.53 0 1 1 0 1.06h-1.44v.91h1.44Z"/></svg><span>無料セッションに申し込む</span><svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+    <span class="btn-sub">ボタンを押すと、公式LINEが開きます</span>
+  </div>
+  <span class="scroll" aria-hidden="true">SCROLL</span>
+</section>
+
+<!-- intro -->
+<section class="intro white" style="background:#fff">
+  <div class="ct fade">
+    <p class="q jw">比べてしまう。|休めない。|なんか満たされない。</p>
+    <p><span class="jw">それって、|あなたの頑張りが|足りないんじゃなくて、</span><br><span class="em">「外側を見すぎてるだけ」</span><br><span class="jw">かもしれません。</span></p>
+    <p><span class="jw">内側に意識を戻す。</span><br><span class="jw">たったそれだけで、|毎日の感じ方は|変わります。</span></p>
+  </div>
+</section>
+
+<!-- concern -->
+<section class="sec" id="concern">
+  <div class="ct">
+    <div class="sh center fade"><p class="en">Concern</p><h2 class="jw">こんな感覚、|ありませんか？</h2></div>
+    <ul class="checks fade">
+      <li>他人と比べて落ち込む回数が多い</li>
+      <li>頑張ってるのに充実感がない</li>
+      <li>休むと罪悪感を感じる</li>
+      <li>自分の気持ちより周りを優先してしまう</li>
+      <li>なんとなくモヤモヤが続いてる</li>
+      <li>自分らしく生きられてない気がする</li>
+      <li>感情に振り回されることが多い</li>
+    </ul>
+    <p class="after-check fade"><span class="jw">1つでも当てはまるなら、</span><br><span class="jw">最後まで読んで|欲しいなと思います。</span></p>
+  </div>
+</section>
+
+<!-- message -->
+<section class="sec white" id="message">
+  <div class="ct">
+    <div class="sh fade"><p class="en">Message</p><h2>はじめまして</h2></div>
+    <div class="msg">
+      <figure class="msg-ph fade"><img src="https://taka-mindset.my.canva.site/inner-clarity-free-trial-session/_assets/media/a08224f9b44986bafe0274edc29cfa3f.jpg" alt="Inner Clarity Coach たか" loading="lazy" width="1797" height="2400"><figcaption>Inner Clarity Coach</figcaption></figure>
+      <div class="msg-tx fade">
+        <h3 class="jw">Inner Clarity Coachの|たかです。</h3>
+        <p>私は小学校からずっと野球をしていました。ただ、いつも試合で結果を出すことができず、その度に「メンタルが弱い」と言われ続けて、それが悔しくて人の何十倍も練習に取り組みました。</p>
+        <p>でも練習試合では結果が出るのに、相変わらず、公式戦になると別人のように力を出せない日々。悔しくて、でも心のどこかで「自分はこんなもんじゃない」と思っていました。</p>
+        <p>そんな時、怪我で練習ができなくなって、初めて気づいたんです。自分は、ずっと外側ばかり見てきたんだなと。技術、練習量、他人の評価。肝心な内側の部分である自分の気持ちや、考え方には、一度も目を向けていませんでした。</p>
+      </div>
+    </div>
+
+    <div class="story">
+      <figure class="story-ph fade"><img src="https://taka-mindset.my.canva.site/inner-clarity-free-trial-session/_assets/media/c1e2d8e6806b4f1695d119eff2254544.jpg" alt="野球をしていた頃のたか" loading="lazy" width="1568" height="1044"></figure>
+      <div class="fade">
+        <h3><small>Thought</small>変わったのは、内側</h3>
+        <p>そこから、バットの振り方などの技術面ではなく、考え方・呼吸法・自分の感覚といった「自分の内側」に向き合ってみることにしました。</p>
+        <p>そうすると、不思議と公式戦でも練習と同じ自分が出せるようになって、公式戦でのホームランや、大観衆の中でのヒーローインタビュー、ベストナインで表彰されたりと、最後は“本番に強い選手”とまで呼ばれるようになれました。そこまで変化できたいちばんの理由は、技術面ではなく、内側の部分が変わったことでした。</p>
+        <p>引退後は物販講師として約700名に伴走しましたが、そこでも結果が出ない人ほど、外側ばかり見ている。内側に意識を戻すだけで、人は静かに、でも確実に変わるなと日々思うようになりました。</p>
+      </div>
+    </div>
+
+    <div class="first fade">
+      <h3>まずは、気づくこと</h3>
+      <p>なのでこれは、野球の世界だけの話じゃありません。頑張っているのに、なかなか結果が出ない。もっとやらなきゃと焦ってしまう。そんな時こそ、一度立ち止まって、自分の内側を見てみてほしいんです。</p>
+      <p>無意識に人と比べてしまう自分も、なかなか休めない自分も、モヤモヤがずっと続く自分も。そのほとんどは、外側を見すぎているだけ。意識を、少しだけ内側に戻してみる。まずは、その感覚に気づく。たったそれだけで、毎日の感じ方は変わっていきます。</p>
+      <p>その最初の一歩を、一緒に見つけていけたらと思っています。あなたのペースで、少しずつ。ここから一緒に、見ていきましょう。</p>
+      <p class="sign">Inner Clarity Coach<b>たか</b></p>
+    </div>
+  </div>
+</section>
+
+<div class="band" style="background-image:url('https://images.unsplash.com/photo-1774381273533-c6aa6fa7d721?w=1800&q=80&fm=jpg');background-position:center 55%"><span>from the outside, to the inside</span></div>
+
+<!-- benefit -->
+<section class="sec white" id="benefit">
+  <div class="ct">
+    <div class="sh center fade"><p class="en">Benefit</p><h2><span class="jw">Inner Clarity&nbsp;|無料セッションで|得られること</span></h2></div>
+    <div class="bens">
+      <div class="ben fade"><p class="no">01</p><h3 class="jw">モヤモヤの|“正体”が見える</h3><p>なんとなく続いてた不安やモヤモヤ。一緒にそのモヤモヤを言葉にしていくことで、「何に引っかかってたのか」が見えてきます。</p></div>
+      <div class="ben fade"><p class="no">02</p><h3 class="jw">自分の“本音”に|気づく</h3><p>外側に向いてた意識を、内側へ。一人だとなかなか見えなかった「本当はどうしたいか」に気づくことができます。</p></div>
+      <div class="ben fade"><p class="no">03</p><h3 class="jw">次の一歩が|明確になる</h3><p>気づいて終わりではなく、「じゃあ何からやればいいか」まで進めていくので、ぐるぐる思考から抜けて、動ける状態に変わります。</p></div>
+      <div class="ben fade"><p class="no">04</p><h3><span class="jw">“外側から内側へ”を|体感できる</span></h3><p>考え方が変わると、同じ出来事でも受け取り方が変わってくる。その感覚を、実際にセッションで体感することができます。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- voice -->
+<section class="sec" id="voice">
+  <div class="ct">
+    <div class="sh center fade"><p class="en">Client Voice</p><h2>お客さまの声</h2></div>
+    <div class="voices">
+      <article class="voice fade">
+        <p class="q" aria-hidden="true">“</p>
+        <h3 class="jw">自然と本音を話してた|自分にビックリ！</h3>
+        <p>終始とても話しやすい雰囲気を作ってくださって、気づいたら自然と本音を話していた自分にビックリしてしまったくらい、有意義な時間でした。一人では気づけなかった考えにたどりつけたこともそうですが、私の悩みに近いご自身の体験談も交えながら聴いてくださったことで、自分の次の一歩がより明確になりました。やることが見えたことで、こうなりたいなというイメージまで湧いてきて、今少しワクワクしています。中々行動に移せない方や、頭の中を整理したい方にぜひおすすめしたいです！</p>
+        <div class="who"><p class="nm">30代・会社員<small>（技術職）</small></p></div>
+      </article>
+      <article class="voice fade">
+        <p class="q" aria-hidden="true">“</p>
+        <h3 class="jw">自分を客観的に|見れるようになりました</h3>
+        <p>最初にお話しした時は、自分が何に悩んでるのかも分からず、人の言動にイライラしては、そんな自分を責めて落ち込む、の繰り返しでした。そんな中でも、たかさんは緊張していた私に終始やわらかく接してくださって、常に肯定してくれる安心できる場で、いつの間にか誰にも話さないようなことまで自然と話せていました。おかげで自分の状態を客観的に見られるようになって、気持ちがすっと軽くなったんです。一人で気持ちを抱えてしまう方に、ぜひおすすめしたいです！</p>
+        <div class="who"><p class="nm">20代・会社員<small>（事務職）</small></p></div>
+      </article>
+      <article class="voice fade">
+        <p class="q" aria-hidden="true">“</p>
+        <h3 class="jw">短所が強みになって|自信に変わりました</h3>
+        <p>自分でも過去の経験からコンプレックスに思っていた部分を、たかさんと一緒に言葉にして一つ一つ紐解いていくうちに、逆に強みかもしれないと捉え方が180度変わっていきました。とことん寄り添ってくれて、親近感の湧く話し方や聴き方をしてくださるので、思ったことが自然と言葉になっていくのが不思議で新鮮な感覚でした。自分の見方が少し変わるだけで、こんなに気持ちが軽くなるんだと実感しています。心のどこかで変わりたいと思っている方に、心からおすすめしたいです！</p>
+        <div class="who"><p class="nm">30代・専門職<small>（対人支援）</small></p></div>
+      </article>
+      <article class="voice fade">
+        <p class="q" aria-hidden="true">“</p>
+        <h3 class="jw">不安で立ち止まってる方に|ぜひオススメ</h3>
+        <p>やりたいことに向けて動き始めたものの、本当に私にできるのかと不安でいっぱいになり、立ち止まっていました。たかさんは物腰がやわらかく、とても落ち着いて話を聴いてくださるので、自分の思いを素直に口に出すことができました。自分の正直な気持ちに向き合えたことで、なぜ自分がそう感じていたのかにも気づけて。コーチの視点で気づきを返してくださったことで、あの不安が逆に確信に変わりました。前に進みたいのに一歩踏み出せない方に、ぜひおすすめしたいです！</p>
+        <div class="who"><p class="nm">30代・フリーランス<small>（独立したばかり）</small></p></div>
+      </article>
+    </div>
+    <p class="voice-note">※掲載は、ご本人の許可をいただいています。</p>
+  </div>
+</section>
+
+<!-- flow -->
+<section class="sec white" id="flow">
+  <div class="ct">
+    <div class="sh center fade"><p class="en">Flow</p><h2>お申し込みの流れ</h2></div>
+    <ol class="flow">
+      <li class="fade"><h3>お申し込み</h3><p>このページのボタンを押すと、メッセージが入った状態で公式LINEが開きます。そのまま送信してください。</p></li>
+      <li class="fade"><h3>日程の調整</h3><p>LINEのトークで、ご都合のよい日時を一緒に決めます。</p></li>
+      <li class="fade"><h3>事前アンケート</h3><p>セッションの前日までに、簡単なアンケートにお答えください。</p></li>
+      <li class="fade"><h3>セッション当日</h3><p>決まった日時に、Zoomでお話しします。</p></li>
+      <li class="fade opt"><h3>ご希望の方のみ</h3><p>セッションの最後に、ご希望の方にだけ「ロードマップセッション」をご案内します。受けるかどうかは、その場で自由に決めていただけます。</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- profile -->
+<section class="sec" id="profile">
+  <div class="ct">
+    <div class="sh fade"><p class="en">Profile</p><h2>プロフィール</h2></div>
+    <div class="prof">
+      <figure class="prof-ph fade"><img src="https://taka-mindset.my.canva.site/inner-clarity-free-trial-session/_assets/media/473eb592ef64e49fe588c0b1e95e644e.jpg" alt="たかのプロフィール写真" loading="lazy" width="1800" height="2400"></figure>
+      <div class="fade">
+        <p class="role">Inner Clarity Coach</p>
+        <p class="name">たか</p>
+        <dl>
+          <div><dt>活動拠点</dt><dd>福岡県</dd></div>
+          <div><dt>生まれ</dt><dd>1994年</dd></div>
+          <div><dt>経歴</dt><dd>社会人野球まで野球一筋／物販講師として約700名に伴走</dd></div>
+          <div><dt>資格</dt><dd>JADP認定ビジネスコーチ<br>JADP認定エグゼクティブコーチ</dd></div>
+        </dl>
+        <div class="bio">
+          <p>学生時代は野球一筋。中学から大学、社会人野球までプレー。練習では結果が出るのに、公式戦で力を出せない日々が続いたが、怪我をきっかけに“内側”と向き合い始める。</p>
+          <p>考え方・呼吸・自分の感覚にフォーカスするようになってから、本番でも平常心で自分のプレーが出せるように。全国大会・東京ドームでのホームラン、ヒーローインタビュー、ベストナインを経験。</p>
+          <p>引退後、物販講師として約700名に伴走。現在は、その全ての体験をもとに「外側から内側へ」をテーマにサポートを届けています。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- entry -->
+<section class="entry" id="entry">
+  <div class="ct">
+    <div class="entry-box fade">
+      <div class="sh center"><p class="en">Entry</p><h2>募集について</h2></div>
+      <div class="body">
+        <p><span class="jw">現在、|『Inner Clarity 無料セッション』は、</span><br><span class="jw">どなたでも|お申し込みいただけます。</span></p>
+        <p><span class="jw">うまく話せなくても、</span><br><span class="jw">モヤモヤが|まとまってなくて|大丈夫です。</span><br><span class="jw">その“まとまらない気持ち”を、</span><br><span class="jw">一緒に言葉にしていく|時間になります。</span></p>
+        <p><span class="jw">少しでも気になったら、</span><br><span class="jw">下のボタンから|お気軽にどうぞ。</span></p>
+      </div>
+      <div class="ttl"><b>Inner Clarity 無料セッション</b><span>モヤモヤをほどく、やさしい時間</span></div>
+      <a class="btn-line to-line" href="#entry"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3C6.48 3 2 6.63 2 11.1c0 4 3.55 7.36 8.35 8 .33.07.77.22.88.5.1.25.07.65.03.9l-.14.86c-.04.25-.2 1 .88.54 1.07-.45 5.78-3.4 7.88-5.83C21.33 14.5 22 12.88 22 11.1 22 6.63 17.52 3 12 3Zm-3.7 10.6H6.33a.53.53 0 0 1-.53-.53V9.13a.53.53 0 1 1 1.06 0v3.4H8.3a.53.53 0 1 1 0 1.07Zm2.03-.53a.53.53 0 1 1-1.06 0V9.13a.53.53 0 1 1 1.06 0v3.94Zm4.75 0a.53.53 0 0 1-.96.31l-2-2.73v2.42a.53.53 0 1 1-1.06 0V9.13a.53.53 0 0 1 .96-.31l2 2.73V9.13a.53.53 0 1 1 1.06 0v3.94Zm3.2-2.5a.53.53 0 1 1 0 1.07h-1.44v.9h1.44a.53.53 0 1 1 0 1.06h-1.97a.53.53 0 0 1-.53-.53V9.13c0-.29.24-.53.53-.53h1.97a.53.53 0 1 1 0 1.06h-1.44v.91h1.44Z"/></svg><span>無料セッションに申し込む</span><svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+      <span class="btn-sub">ボタンを押すと、公式LINEが開きます。<br><span class="jw">入っているメッセージを、|そのまま送信してください。</span></span>
+      <div class="notes">
+        <p>※無料セッションの最後に、ご希望の方にだけ、有料のコース『Inner Clarity Coaching』についてお話しする「ロードマップセッション」をご案内します。ご希望がなければ、そのままで大丈夫です。</p>
+        <p class="small">セッションはZoom（Zoom Communications, Inc.・米国）で行います。お話しいただいた内容は、セッションのためにだけ使います。当方から、健康に関するご質問はしません。個人情報の取り扱いは、<a href="https://clarity-shift-lab.github.io/privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>をご確認ください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- closing -->
+<section class="close">
+  <div class="ct fade">
+    <p class="en">Message</p>
+    <h2>あなたが主人公</h2>
+    <div class="body">
+      <p><span class="jw">これまで、</span><br><span class="jw">「毎日他人と比べて辛い」</span><br><span class="jw">「自分には価値がない気がする」</span><br><span class="jw">そんな悩みを抱えた方が、</span><br><span class="jw">少しずつ変わっていく姿を|見てきました。</span></p>
+      <p><span class="jw">「周りを気にせず|動けるようになった」</span><br><span class="jw">「私は私でいいと、|やっと思えた」</span><br><span class="jw">そんな声をいただくたび、</span><br><span class="jw">人は“内側が整うだけで”</span><br><span class="jw">こんなに心が軽くなるんだと|実感します。</span></p>
+      <p><span class="jw">誰かと比べるのではなくて、</span><br><span class="jw">自分の感覚を取り戻して、</span><br><span class="jw">静かに前へ進んでいける人を|増やしたい。</span><br><span class="jw">その想いで、|日々発信しています。</span></p>
+      <p><span class="jw">「今のままじゃ、|なんだかしんどい」</span><br><span class="jw">「本当はもっと|心地よく生きたい」</span><br><span class="jw">もし少しでも|そう感じているなら、</span><br><span class="jw">一人で抱え込まなくて|大丈夫。</span></p>
+      <p><span class="jw">あなたのペースで、|あなたらしい歩幅で。</span><br><span class="jw">まずは一緒に、|その一歩を|見つけていきましょう。</span></p>
+    </div>
+    <p class="sign">Inner Clarity Coach<b>たか</b></p>
+    <a class="btn-line to-line" href="#entry"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3C6.48 3 2 6.63 2 11.1c0 4 3.55 7.36 8.35 8 .33.07.77.22.88.5.1.25.07.65.03.9l-.14.86c-.04.25-.2 1 .88.54 1.07-.45 5.78-3.4 7.88-5.83C21.33 14.5 22 12.88 22 11.1 22 6.63 17.52 3 12 3Zm-3.7 10.6H6.33a.53.53 0 0 1-.53-.53V9.13a.53.53 0 1 1 1.06 0v3.4H8.3a.53.53 0 1 1 0 1.07Zm2.03-.53a.53.53 0 1 1-1.06 0V9.13a.53.53 0 1 1 1.06 0v3.94Zm4.75 0a.53.53 0 0 1-.96.31l-2-2.73v2.42a.53.53 0 1 1-1.06 0V9.13a.53.53 0 0 1 .96-.31l2 2.73V9.13a.53.53 0 1 1 1.06 0v3.94Zm3.2-2.5a.53.53 0 1 1 0 1.07h-1.44v.9h1.44a.53.53 0 1 1 0 1.06h-1.97a.53.53 0 0 1-.53-.53V9.13c0-.29.24-.53.53-.53h1.97a.53.53 0 1 1 0 1.06h-1.44v.91h1.44Z"/></svg><span>無料セッションに申し込む</span><svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+</main>
+
+<footer class="ft">
+  <div class="ct">
+    <a class="logo" href="#top"><b>Clarity Shift Lab</b><span>INNER CLARITY COACHING</span></a>
+    <nav aria-label="フッターメニュー">
+      <a href="#message">はじめに</a>
+      <a href="#voice">お客さまの声</a>
+      <a href="#flow">お申し込みの流れ</a>
+      <a href="#profile">プロフィール</a>
+      <a href="https://clarity-shift-lab.github.io/privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>
+    </nav>
+    <p class="cp">© Clarity Shift Lab</p>
+  </div>
+</footer>
+
+<div class="float" id="float"><a class="btn-line to-line" href="#entry"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3C6.48 3 2 6.63 2 11.1c0 4 3.55 7.36 8.35 8 .33.07.77.22.88.5.1.25.07.65.03.9l-.14.86c-.04.25-.2 1 .88.54 1.07-.45 5.78-3.4 7.88-5.83C21.33 14.5 22 12.88 22 11.1 22 6.63 17.52 3 12 3Zm-3.7 10.6H6.33a.53.53 0 0 1-.53-.53V9.13a.53.53 0 1 1 1.06 0v3.4H8.3a.53.53 0 1 1 0 1.07Zm2.03-.53a.53.53 0 1 1-1.06 0V9.13a.53.53 0 1 1 1.06 0v3.94Zm4.75 0a.53.53 0 0 1-.96.31l-2-2.73v2.42a.53.53 0 1 1-1.06 0V9.13a.53.53 0 0 1 .96-.31l2 2.73V9.13a.53.53 0 1 1 1.06 0v3.94Zm3.2-2.5a.53.53 0 1 1 0 1.07h-1.44v.9h1.44a.53.53 0 1 1 0 1.06h-1.97a.53.53 0 0 1-.53-.53V9.13c0-.29.24-.53.53-.53h1.97a.53.53 0 1 1 0 1.06h-1.44v.91h1.44Z"/></svg><span>無料セッションに申し込む</span><svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a></div>
+
+<script>
+(function(){
+  /* 公式LINEのベーシックID（@から始まるID）をここに入れます */
+  var LINE_ID="@585sfqhv";
+  var LINE_TEXT="無料セッションを希望します🕊️";
+
+  var url="https://line.me/R/oaMessage/"+encodeURIComponent(LINE_ID)+"/?"+encodeURIComponent(LINE_TEXT);
+  document.querySelectorAll(".to-line").forEach(function(a){
+    if(LINE_ID.charAt(0)==="@"){a.href=url;a.target="_blank";a.rel="noopener"}
+  });
+
+  /* 改行：|で区切ったまとまりの途中では折り返さない */
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+  document.querySelectorAll(".jw").forEach(function(el){
+    var t=el.textContent.replace(/\s*\n\s*/g,"");if(t.indexOf("|")<0)return;
+    el.innerHTML=t.split("|").map(function(x){return'<span class="ck">'+esc(x)+"</span>"}).join("<wbr>");
+  });
+
+  /* 長い文章：文節の途中で折り返さない（BudouX） */
+  import("https://cdn.jsdelivr.net/npm/budoux@0.7.0/+esm").then(function(m){
+    var bp=m.loadDefaultJapaneseParser();
+    document.querySelectorAll("main p, main li, main dd").forEach(function(el){
+      if(el.classList.contains("jw")||el.querySelector(".jw,.ck"))return;
+      bp.applyToElement(el);
+    });
+  }).catch(function(){});
+
+  /* ヘッダー・追従ボタン */
+  var hd=document.getElementById("hd"),fl=document.getElementById("float"),entry=document.getElementById("entry");
+  function onScroll(){
+    var y=window.scrollY||0,h=window.innerHeight;
+    hd.classList.toggle("solid",y>40);
+    var r=entry.getBoundingClientRect();
+    fl.classList.toggle("show",y>h*.8 && !(r.top<h && r.bottom>0));
+  }
+  window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+
+  /* メニュー */
+  var nav=document.getElementById("nav"),ob=document.getElementById("menuOpen");
+  function setNav(o){nav.classList.toggle("open",o);nav.setAttribute("aria-hidden",o?"false":"true");ob.setAttribute("aria-expanded",o?"true":"false");document.body.style.overflow=o?"hidden":""}
+  ob.addEventListener("click",function(){setNav(true)});
+  document.getElementById("menuClose").addEventListener("click",function(){setNav(false)});
+  nav.querySelectorAll("[data-close]").forEach(function(a){a.addEventListener("click",function(){setNav(false)})});
+
+  /* ふわっと表示 */
+  var els=document.querySelectorAll(".fade");
+  if("IntersectionObserver" in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{rootMargin:"0px 0px -8% 0px"});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add("in")})}
+})();
+</script>
+</body>
+</html>
