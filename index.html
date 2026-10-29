@@ -182,6 +182,9 @@ p,li,dd{text-wrap:pretty;word-break:auto-phrase}
 .entry-box .ttl{margin:32px 0 22px;text-align:center}
 .entry-box .ttl b{display:block;font-family:var(--en);font-weight:400;font-size:28px;color:var(--ink);letter-spacing:.04em;line-height:1.2}
 .entry-box .ttl span{display:block;font-family:var(--mincho);font-size:13px;letter-spacing:.18em;color:var(--blue);margin-top:6px}
+.entry-box .ttl b.t-ja{font-family:var(--mincho);font-weight:500;font-size:17px;letter-spacing:.3em;padding-left:.3em;margin:8px 0 10px}
+.btn-line span{white-space:nowrap}
+@media (max-width:420px){.entry-box .btn-line{font-size:14px;letter-spacing:.04em;padding:16px 16px;gap:8px}}
 .notes{margin-top:30px;border-top:1px solid var(--line);padding-top:20px;display:grid;gap:12px}
 .notes p{font-size:12.5px;line-height:1.95;color:var(--text)}
 .notes p.small{font-size:11.5px;color:var(--mute)}
@@ -528,7 +531,7 @@ body{background:#f5f5f2}
         <dl>
           <div><dt>活動拠点</dt><dd>福岡県</dd></div>
           <div><dt>生まれ</dt><dd>1994年</dd></div>
-          <div><dt>経歴</dt><dd>社会人野球まで野球一筋／物販講師として約700名に伴走</dd></div>
+          <div><dt>経歴</dt><dd><span class="ck">社会人野球まで野球一筋／</span><wbr><span class="ck">物販講師として約700名に伴走</span></dd></div>
           <div><dt>資格</dt><dd>JADP認定ビジネスコーチ<br>JADP認定エグゼクティブコーチ</dd></div>
         </dl>
         <div class="bio">
@@ -551,7 +554,7 @@ body{background:#f5f5f2}
         <p><span class="jw">うまく話せなくても、</span><br><span class="jw">モヤモヤが|まとまってなくて|大丈夫です。</span><br><span class="jw">その“まとまらない気持ち”を、</span><br><span class="jw">一緒に言葉にしていく|時間になります。</span></p>
         <p><span class="jw">少しでも気になったら、</span><br><span class="jw">下のボタンから|お気軽にどうぞ。</span></p>
       </div>
-      <div class="ttl"><b>Inner Clarity 無料セッション</b><span>モヤモヤをほどく、やさしい時間</span></div>
+      <div class="ttl"><b>Inner Clarity</b><b class="t-ja">無料セッション</b><span>モヤモヤをほどく、やさしい時間</span></div>
       <a class="btn-line to-line" href="#entry"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3C6.48 3 2 6.63 2 11.1c0 4 3.55 7.36 8.35 8 .33.07.77.22.88.5.1.25.07.65.03.9l-.14.86c-.04.25-.2 1 .88.54 1.07-.45 5.78-3.4 7.88-5.83C21.33 14.5 22 12.88 22 11.1 22 6.63 17.52 3 12 3Zm-3.7 10.6H6.33a.53.53 0 0 1-.53-.53V9.13a.53.53 0 1 1 1.06 0v3.4H8.3a.53.53 0 1 1 0 1.07Zm2.03-.53a.53.53 0 1 1-1.06 0V9.13a.53.53 0 1 1 1.06 0v3.94Zm4.75 0a.53.53 0 0 1-.96.31l-2-2.73v2.42a.53.53 0 1 1-1.06 0V9.13a.53.53 0 0 1 .96-.31l2 2.73V9.13a.53.53 0 1 1 1.06 0v3.94Zm3.2-2.5a.53.53 0 1 1 0 1.07h-1.44v.9h1.44a.53.53 0 1 1 0 1.06h-1.97a.53.53 0 0 1-.53-.53V9.13c0-.29.24-.53.53-.53h1.97a.53.53 0 1 1 0 1.06h-1.44v.91h1.44Z"/></svg><span>無料セッションに申し込む</span><svg class="arw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
       <span class="btn-sub">ボタンを押すと、公式LINEが開きます。<br><span class="jw">入っているメッセージを、|そのまま送信してください。</span></span>
       <div class="notes">
@@ -622,7 +625,22 @@ body{background:#f5f5f2}
       if(el.classList.contains("jw")||el.querySelector(".jw,.ck"))return;
       bp.applyToElement(el);
     });
-  }).catch(function(){});
+    keepWords();
+  }).catch(keepWords);
+
+  /* 途中で切りたくない言葉をひとかたまりにする */
+  function keepWords(){
+    var words=["寄り添ってくれて","いつの間にか","全国大会・","ご希望の方にだけ","そんな時こそ、","そんな中でも、","物販講師として","“本番に強い選手”とまで","話し方や聴き方を","『Inner Clarity Coaching』","受けるかどうかは、","こんなもんじゃない","「本当はどうしたいか」に","「自分の内側」に","落ち込む、の繰り返し","「ロードマップセッション」を","感覚といった","米国）で行います。"];
+    document.querySelectorAll("main p, main li, main dd").forEach(function(el){
+      if(el.querySelector(".jw"))return;
+      var h=el.innerHTML;
+      words.forEach(function(w){
+        var re=new RegExp(w.split("").map(function(c){return c.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}).join("(?:<wbr>|\u200b)*")+"(?:(?:<wbr>|\u200b)*([、。]))?","g");
+        h=h.replace(re,function(m,p){return '<span class="ck">'+w+(p||"")+'</span>'});
+      });
+      if(h!==el.innerHTML)el.innerHTML=h;
+    });
+  }
 
   /* ヘッダー・追従ボタン */
   var hd=document.getElementById("hd"),fl=document.getElementById("float"),entry=document.getElementById("entry");
