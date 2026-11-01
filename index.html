@@ -606,7 +606,7 @@ body{background:#f5f5f2}
   var LINE_ID="@585sfqhv";
   var LINE_TEXT="無料セッションを希望します🕊️";
   /* どこから来た人か分かるように、ブログ（?from=ameblo）から来た人はメッセージを変える */
-  var FROM_TEXT={ameblo:"ブログを見て、無料セッションを希望します🕊️"};
+  var FROM_TEXT={ameblo:"無料セッションを希望します🕊️（アメブロ）"};
   try{var from=new URLSearchParams(location.search).get("from");if(from&&FROM_TEXT[from])LINE_TEXT=FROM_TEXT[from];}catch(e){}
 
   var url="https://line.me/R/oaMessage/"+encodeURIComponent(LINE_ID)+"/?"+encodeURIComponent(LINE_TEXT);
